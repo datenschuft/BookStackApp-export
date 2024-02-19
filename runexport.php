@@ -97,7 +97,7 @@ while ($resultcount <> 0) {
     fclose($fp);
   } else {
     echo "$url URL Fetch error - aborting";
-    exit;
+    exit(99);
   }
   // processing data
   $resultarray=json_decode($result, true)['data'];
