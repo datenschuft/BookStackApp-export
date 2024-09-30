@@ -5,13 +5,14 @@ Bookstack Export - Script configuration
 License: AGPL3
 
 Version 1.0.0 (03072021)
+Version 1.0.2 (30092024)
 */
 $config=array();
-// MySQL - to the datzabase of the bookstack wiki
-$config['sqlhost']="localhost";
-$config['sqldb']="bookstack";
-$config['sqluser']="bookstack";
-$config['sqlpwd']="supergeheimespwd";
+// MySQL - to the database of the bookstack wiki (no longer required for Attachment-eport
+//$config['sqlhost']="localhost";
+//$config['sqldb']="bookstack";
+//$config['sqluser']="bookstack";
+//$config['sqlpwd']="supergeheimespwd";
 // url of the wiki (required für api-calls)
 $config['wikiurl']="https://wiki.example.com";
 // tokenid and tokensecret
@@ -20,9 +21,9 @@ $config['wikitoken']="youtrokenid";
 $config['wikitokensecret']="yourtokensecret";
 $config['exportpath']="/home/user/wikiexport";
 
-$config['exportattachments']=true;
+//$config['exportattachments']=true;
 // copy = running on webserverhost to copy attachments from webroot-path
 // web = download attachments
-$config['exportattachmentsmeth']="copy";
+//$config['exportattachmentsmeth']="copy";
 // required config for exportmethod copy
-$config['attachmentslocalpath']="/var/www/bookstack/storage";
+//$config['attachmentslocalpath']="/var/www/bookstack/storage";
